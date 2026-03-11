@@ -1,0 +1,104 @@
+ Python Dictionary and its related functions**.
+
+ Algorithm 
+
+1. Start
+2. Create a dictionary with some key-value pairs
+3. Display the original dictionary
+4. Add a new key-value pair
+5. Update the value of an existing key
+6. Delete a key-value pair using **del**
+7. Delete all key-value pairs using **clear()**
+8. Access a value using a key
+9. Get all keys using **keys()**
+10. Get all values using **values()**
+11. Get all key-value pairs using **items()**
+12. Check if a key exists using **in**
+13. Display the length of the dictionary using **len()**
+14. Display all results
+15. Stop
+
+CODE 
+
+# Create dictionary from user input
+n = int(input("Enter number of key-value pairs: "))
+my_dict = {}
+
+for i in range(n):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    my_dict[key] = value
+
+print("\nOriginal Dictionary:", my_dict)
+
+# Add a new key-value pair
+new_key = input("Enter a new key to add: ")
+new_value = input("Enter value for new key: ")
+my_dict[new_key] = new_value
+print("After adding:", my_dict)
+
+# Update an existing key
+upd_key = input("Enter key to update: ")
+upd_value = input("Enter new value: ")
+my_dict[upd_key] = upd_value
+print("After update:", my_dict)
+
+# Delete a key-value pair
+del_key = input("Enter key to delete: ")
+if del_key in my_dict:
+    del my_dict[del_key]
+print("After deletion:", my_dict)
+
+# Access a value using key
+access_key = input("Enter key to access value: ")
+if access_key in my_dict:
+    print("Value:", my_dict[access_key])
+else:
+    print("Key not found")
+
+# Display all keys, values, items
+print("Keys:", my_dict.keys())
+print("Values:", my_dict.values())
+print("Items:", my_dict.items())
+
+# Check if a key exists
+check_key = input("Enter key to check existence: ")
+print(check_key in my_dict)
+
+# Length of dictionary
+print("Length of dictionary:", len(my_dict))
+
+OUTPUT 
+
+Enter number of key-value pairs: 3
+Enter key: name
+Enter value: Alice
+Enter key: age
+Enter value: 25
+Enter key: city
+Enter value: London
+
+Original Dictionary: {'name': 'Alice', 'age': '25', 'city': 'London'}
+
+Enter a new key to add: country
+Enter value for new key: UK
+After adding: {'name': 'Alice', 'age': '25', 'city': 'London', 'country': 'UK'}
+
+Enter key to update: age
+Enter new value: 26
+After update: {'name': 'Alice', 'age': '26', 'city': 'London', 'country': 'UK'}
+
+Enter key to delete: city
+After deletion: {'name': 'Alice', 'age': '26', 'country': 'UK'}
+
+Enter key to access value: name
+Value: Alice
+
+Keys: dict_keys(['name', 'age', 'country'])
+Values: dict_values(['Alice', '26', 'UK'])
+Items: dict_items([('name', 'Alice'), ('age', '26'), ('country', 'UK')])
+
+Enter key to check existence: age
+True
+
+Length of dictionary: 3
