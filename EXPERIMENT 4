@@ -1,0 +1,99 @@
+List and Related Functions in Python
+
+ALGORITHM 
+
+1. Start
+2. Create a list with some elements
+3. Display the original list
+4. Add a new element at the end of the list using **append()**
+5. Insert an element at a specific position using **insert()**
+6. Remove a specific element from the list using **remove()**
+7. Remove an element using its index with **pop()**
+8. Sort the list elements in ascending order using **sort()**
+9. Reverse the order of elements using **reverse()**
+10. Find the total number of elements in the list using **len()**
+11. Find the maximum element in the list using **max()**
+12. Find the minimum element in the list using **min()**
+13. Find the sum of all elements using **sum()**
+14. Display the final updated list and results
+15. Stop
+
+CODE 
+
+# Take number of elements from user
+n = int(input("Enter number of elements: "))
+
+numbers = []
+
+# Input elements
+for i in range(n):
+    value = int(input("Enter element: "))
+    numbers.append(value)
+
+print("Original List:", numbers)
+
+# Append element
+a = int(input("Enter element to append: "))
+numbers.append(a)
+print("After append:", numbers)
+
+# Insert element
+pos = int(input("Enter position to insert: "))
+val = int(input("Enter value to insert: "))
+numbers.insert(pos, val)
+print("After insert:", numbers)
+
+# Remove element
+rem = int(input("Enter element to remove: "))
+numbers.remove(rem)
+print("After remove:", numbers)
+
+# Pop element
+p = int(input("Enter index to pop: "))
+numbers.pop(p)
+print("After pop:", numbers)
+
+# Sort list
+numbers.sort()
+print("Sorted List:", numbers)
+
+# Reverse list
+numbers.reverse()
+print("Reversed List:", numbers)
+
+# Other functions
+print("Length:", len(numbers))
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Sum:", sum(numbers))
+
+OUTPUT
+
+Enter number of elements: 4
+Enter element: 10
+Enter element: 20
+Enter element: 30
+Enter element: 40
+
+Original List: [10, 20, 30, 40]
+
+Enter element to append: 50
+After append: [10, 20, 30, 40, 50]
+
+Enter position to insert: 2
+Enter value to insert: 25
+After insert: [10, 20, 25, 30, 40, 50]
+
+Enter element to remove: 30
+After remove: [10, 20, 25, 40, 50]
+
+Enter index to pop: 1
+After pop: [10, 25, 40, 50]
+
+Sorted List: [10, 25, 40, 50]
+Reversed List: [50, 40, 25, 10]
+
+Length: 4
+Maximum: 50
+Minimum: 10
+Sum: 125
