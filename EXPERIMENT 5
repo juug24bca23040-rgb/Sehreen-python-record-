@@ -1,0 +1,60 @@
+Demonstrate Tuple and Related Functions
+
+ALGORITHM 
+
+1. Start
+2. Create a tuple with some elements
+3. Display the original tuple
+4. Find the length of the tuple using **len()**
+5. Find the maximum value using **max()**
+6. Find the minimum value using **min()**
+7. Find the sum of elements using **sum()**
+8. Count the number of occurrences of an element using **count()**
+9. Find the index position of an element using **index()**
+10. Display all the results
+11. Stop
+
+CODE 
+n = int(input("Enter number of elements: "))
+
+data = []
+
+for i in range(n):
+    value = int(input("Enter element: "))
+    data.append(value)
+
+# Convert list to tuple
+numbers = tuple(data)
+
+print("Tuple:", numbers)
+
+print("Length:", len(numbers))
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Sum:", sum(numbers))
+
+x = int(input("Enter element to count: "))
+print("Count:", numbers.count(x))
+
+y = int(input("Enter element to find index: "))
+print("Index:", numbers.index(y))
+
+OUTPUT 
+
+Enter number of elements: 4
+Enter element: 10
+Enter element: 20
+Enter element: 30
+Enter element: 20
+
+Tuple: (10, 20, 30, 20)
+Length: 4
+Maximum: 30
+Minimum: 10
+Sum: 80
+
+Enter element to count: 20
+Count: 2
+
+Enter element to find index: 30
+Index: 2
