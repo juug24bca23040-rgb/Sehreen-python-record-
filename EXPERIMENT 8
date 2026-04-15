@@ -1,0 +1,14 @@
+import re
+text = "My number is 9876543210"
+result = re.search(r"\d{10}", text)
+if result:
+    print("Number found:", result.group())
+text2 = "Marks are 85, 90 and 78"
+numbers = re.findall(r"\d+", text2)
+print("All numbers:", numbers)
+text3 = "Hello Python"
+if re.match(r"Hello", text3):
+    print("Starts with Hello")
+text4 = "I like apples"
+new_text = re.sub(r"apples", "oranges", text4)
+print("After replacement:", new_text)
