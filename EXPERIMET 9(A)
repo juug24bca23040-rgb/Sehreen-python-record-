@@ -1,3 +1,18 @@
+ALGORITHM 
+
+Start the program
+Import numpy as np and pandas as pd
+Create a NumPy array with some numbers
+Display the array
+Find and display mean, sum, and maximum using NumPy functions
+Create a dictionary with student names and marks
+Convert the dictionary into a Pandas DataFrame
+Display the DataFrame
+Calculate and display average and maximum marks using Pandas
+Stop the program
+
+CODE
+
 import numpy as np
 import pandas as pd
 print("NumPy Example:")
@@ -16,3 +31,19 @@ print("DataFrame:")
 print(df)
 print("\nAverage Marks:", df["Marks"].mean())
 print("Maximum Marks:", df["Marks"].max())
+
+OUTPUT
+
+Array: [10 20 30 40 50]
+Mean: 30.0
+Sum: 150
+Max: 50
+
+DataFrame:
+      Name  Marks
+0    Alice     85
+1      Bob     90
+2  Charlie     78
+
+Average Marks: 84.33
+Maximum Marks: 90
