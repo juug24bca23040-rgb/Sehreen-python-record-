@@ -1,3 +1,23 @@
+ALGORITHM 
+
+Start the program
+Import the re module
+Define a string with a phone number
+Use re.search() to find a 10-digit number
+If found, display the number
+Define another string with marks
+Use re.findall() to extract all numbers
+Display the list of numbers
+Define a string starting with "Hello"
+Use re.match() to check the beginning of the string
+If matched, display the message
+Define a string with the word "apples"
+Use re.sub() to replace "apples" with "oranges"
+Display the modified string
+Stop the program
+
+code 
+
 import re
 text = "My number is 9876543210"
 result = re.search(r"\d{10}", text)
@@ -12,3 +32,10 @@ if re.match(r"Hello", text3):
 text4 = "I like apples"
 new_text = re.sub(r"apples", "oranges", text4)
 print("After replacement:", new_text)
+
+Output
+
+Number found: 9876543210
+All numbers: ['85', '90', '78']
+Starts with Hello
+After replacement: I like oranges
