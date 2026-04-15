@@ -1,8 +1,8 @@
 class Animal:
     def __init__(self, name):
-        self.__name = name   # private variable
+        self.__name = name    
     def speak(self):
-        pass   # will be defined in child classes
+        pass   
     def get_name(self):
         return self.__name
 class Dog(Animal):
@@ -11,7 +11,6 @@ class Dog(Animal):
 class Cat(Animal):
     def speak(self):
         return self.get_name() + " says Meow"
-# creating objects
 d = Dog("Buddy")
 c = Cat("Kitty")
 print(d.speak())
