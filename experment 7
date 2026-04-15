@@ -1,3 +1,21 @@
+ALGORITM
+
+Start the program
+Define a base class Animal
+Declare a private variable name (Encapsulation)
+Create a method speak() with no implementation (Abstraction)
+Create a method to access the private variable
+Define a derived class Dog that inherits from Animal (Inheritance)
+Override the speak() method in Dog
+Define another derived class Cat that inherits from Animal
+Override the speak() method in Cat (Polymorphism)
+Create objects of Dog and Cat
+Call the speak() method for both objects
+Display the results
+Stop the program
+
+code 
+
 class Animal:
     def __init__(self, name):
         self.__name = name    
@@ -15,3 +33,8 @@ d = Dog("Buddy")
 c = Cat("Kitty")
 print(d.speak())
 print(c.speak())
+
+
+output 
+Buddy says Woof
+Kitty says Meow
