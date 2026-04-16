@@ -1,0 +1,50 @@
+Start
+Import libraries
+Import pandas for data handling
+Import matplotlib.pyplot for plotting graph
+Create Data
+Create a dataset with:
+Names: Sakshi, Chetan, Tina, Akshat
+Monthly Spend values (as strings)
+Convert Data Type
+Convert "Monthly_spend" column from string to integer
+Sort Data
+Sort the dataset based on "Monthly_spend" in ascending order
+Create Graph
+Create a new figure using plt.figure()
+Plot Bar Chart
+X-axis → Names
+Y-axis → Monthly Spend
+Use plt.bar() to draw bars
+Add Labels
+Set X-axis label → "Name"
+Set Y-axis label → "Monthly Spend"
+Add title → "Monthly Spend (Sorted)"
+Display Graph
+Use plt.show() to display the chart
+Stop
+
+code
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+spl = pd.DataFrame({
+    "Name": ["Sakshi", "Chetan", "Tina", "Akshat"],
+    "Monthly_spend": ["60000", "40000", "65000", "50000"]
+})
+
+
+spl["Monthly_spend"] = spl["Monthly_spend"].astype(int)
+spl_sorted = spl.sort_values(by="Monthly_spend", ascending=True)
+
+plt.figure()
+plt.bar(spl_sorted["Name"], spl_sorted["Monthly_spend"])
+plt.xlabel("Name")
+plt.ylabel("Monthly Spend")
+plt.title("Monthly Spend (Sorted)")
+plt.show()
+
+
+
+
