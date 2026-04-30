@@ -1,0 +1,39 @@
+Algorithm 
+Start
+Import libraries: matplotlib and seaborn
+Create or load dataset
+Plot different graphs:
+Line chart
+Bar chart
+Pie chart
+Histogram
+Scatter plot
+Display each graph
+Stop
+
+code
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 25, 30, 40]
+labels = ['A', 'B', 'C', 'D', 'E']
+plt.plot(x, y)
+plt.title("Line Chart")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.show()
+plt.bar(labels, y)
+plt.title("Bar Chart")
+plt.show()
+plt.pie(y, labels=labels, autopct='%1.1f%%')
+plt.title("Pie Chart")
+plt.show()
+plt.hist(y)
+plt.title("Histogram")
+plt.show()
+plt.scatter(x, y)
+plt.title("Scatter Plot")
+plt.show()
+
+
